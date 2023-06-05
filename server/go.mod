@@ -3,6 +3,7 @@ module github.com/flat35hd99/todo-go2/server
 go 1.19
 
 require (
+	github.com/gin-contrib/cors v1.4.0
 	github.com/gin-gonic/gin v1.9.1
 	gorm.io/driver/sqlite v1.5.1
 	gorm.io/gorm v1.25.1

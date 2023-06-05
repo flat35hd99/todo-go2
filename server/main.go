@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 
 	"gorm.io/driver/sqlite"
@@ -52,6 +53,7 @@ func main() {
 	r := gin.Default()
 
 	r.Use(errorMiddleware)
+	r.Use(cors.Default()) // TODO: CORS全部通すようになってしまっているので、開発中だけ有効になるようにする。
 
 	r.GET("/todo/:id", c.getTodoById)
 	r.GET("/todo", c.listTodoById)
