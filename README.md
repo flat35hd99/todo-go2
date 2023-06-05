@@ -1,5 +1,15 @@
 # Todo app
 
-todo.taru.work/
+Start backend dev server
 
-api.todo.taru.work/
+```sh
+cd server
+air
+```
+
+Start frontend dev server
+
+```sh
+cd front
+npm run dev
+```
